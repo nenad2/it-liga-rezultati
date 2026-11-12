@@ -31,16 +31,14 @@ export const teamLogos: Record<string, string> = {
 // ============================================================
 //  VELIKE SLIKE NA POČETNOJ STRANI (smenjuju se same)
 // ============================================================
-//  1) Ubaci slike u public/hero/ (preporuka: JPG, širine oko 1600-2000 px,
-//     do ~400 KB po slici da se sajt brzo učitava).
-//  2) Upiši putanje u listu ispod, redom kojim treba da se smenjuju.
-//  3) Sa jednom slikom nema smenjivanja.
+//  Ubaci svoje slike u public/hero/ sa TAČNO ovim imenima: 1.jpg, 2.jpg, 3.jpg
+//  (preporuka: širina oko 1600-2000 px, do ~400 KB po slici).
+//  Ne treba ništa da menjaš u kodu. Slika koja ne postoji se preskače,
+//  a ako nema nijedne, prikazuje se podrazumevana slika (/football.jpg).
+//  Kad skineš novi ZIP, tvoje slike u public/hero/ ostaju netaknute.
 // ============================================================
-export const heroImages: string[] = [
-  '/hero/1.jpg',
-  '/hero/2.jpg',
-  '/hero/3.jpg',
-];
+export const heroImages: string[] = ['/hero/1.jpg', '/hero/2.jpg', '/hero/3.jpg'];
+export const heroFallback = '/football.jpg';
 
 // Na koliko milisekundi se slika menja (5000 = 5 sekundi).
 export const heroIntervalMs = 5000;

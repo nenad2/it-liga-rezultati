@@ -279,3 +279,7 @@
 @media(prefers-reduced-motion:reduce){.hero-slide{transition:none}}
 
 .topbar-links{display:flex;align-items:center;gap:22px}
+
+.footer-bottom{flex-wrap:wrap;gap:6px 18px}
+.footer-credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.footer-credit a:hover{color:var(--lime-text)}
